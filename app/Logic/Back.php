@@ -35,7 +35,7 @@ class Back
         $tempDate = explode('-', $this->card_expiration);
         $resultDate = checkdate((int)$tempDate[1], 1, (int)$tempDate[0]);
 
-        if (strlen((string)$this->card_number) != 6) {
+        if (strlen((string)$this->card_number) != 16) {
             throw  new \Exception("Card_number is not valid", 400);
         }
 

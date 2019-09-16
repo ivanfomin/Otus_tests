@@ -22,7 +22,7 @@ class BackTests extends TestCase
     {
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Card_holder is not valid');
-        $this->back = new Back(123456, 'Ivan Fomin ', '2019-01', 123, 100, 300);
+        $this->back = new Back(1234567891123456, 'Ivan Fomin ', '2019-01', 123, 100, 300);
         $this->fail("Too many spaces");
     }
 
@@ -30,7 +30,7 @@ class BackTests extends TestCase
     {
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Card_expiration is not valid');
-        $this->back = new Back(123456, 'Ivan Fomin', '06-70', 123, 1001, 300);
+        $this->back = new Back(1234567891123456, 'Ivan Fomin', '06-70', 123, 1001, 300);
         $this->fail("Wrong date");
 
     }
@@ -39,7 +39,7 @@ class BackTests extends TestCase
     {
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Cvv is not valid');
-        $this->back = new Back(123456, 'Ivan Fomin', '2019-01', 1234, 100, 300);
+        $this->back = new Back(1234567891123456, 'Ivan Fomin', '2019-01', 1234, 100, 300);
         $this->fail("Cvv wrong");
     }
 
@@ -47,7 +47,7 @@ class BackTests extends TestCase
     {
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Order_number is not valid');
-        $this->back = new Back(123456, 'Ivan Fomin', '2019-01', 123, 12345678912345678, 300);
+        $this->back = new Back(1234567891123456, 'Ivan Fomin', '2019-01', 123, 12345678912345678, 300);
         $this->fail("Order wrong");
     }
 
@@ -55,7 +55,7 @@ class BackTests extends TestCase
     {
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Sum is not valid');
-        $this->back = new Back(123456, 'Ivan Fomin', '2019-01', 123, 100, -300);
+        $this->back = new Back(1234567891123456, 'Ivan Fomin', '2019-01', 123, 100, -300);
         $this->fail("Sum wrong");
     }
 
