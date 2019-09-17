@@ -34,6 +34,8 @@ class Back
 
         $tempDate = explode('-', $this->card_expiration);
         $resultDate = checkdate((int)$tempDate[1], 1, (int)$tempDate[0]);
+                $order_len = strlen((string)$this->order_number);
+
 
         if (strlen((string)$this->card_number) != 16) {
             throw  new \Exception("Card_number is not valid", 400);
@@ -52,7 +54,7 @@ class Back
             throw new \Exception("Cvv is not valid", 400);
         }
 
-        if (strlen((string)$this->order_number) > 16) {
+        if ($this->order_number <= 0 || $order_len > 16) {
             throw new \Exception("Order_number is not valid", 400);
         }
 

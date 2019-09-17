@@ -9,20 +9,23 @@
 </head>
 <body>
 
-</body>
-</html>
+
 <p>Введите данные для оплаты</p>
-<form action="/app/Logic/action.php" method="post" id="send_form">
+<form method="post" action="/app/Logic/action.php" id="update_form">
     <label for="number">CardNumber</label>
-        <input id="number" type="number" minlength="16" size="16" name="card_number">
-
-    <p>Owner<input type="text" name="card_holder"></p>
-    <p>Expiration<input type="month" name="card_expiration"></p>
-    <p>CVV<input type="number" maxlength="3" name="cvv"></p>
-    <p>Order number<input type="number" maxlength="16" name="order_number"></p>
-    <p>Sum<input type="text" name="sum"></p>
-        <input type="submit" name="submitButton" value="Send"/>
-
-
+    <input id="number" type="number" minlength="16" size="16" name="card_number">
+    <label for="card">Owner</label>
+    <input id="card" type="text" name="card_holder">
+    <label for="expiration">Expiration</label>
+    <input id="expiration" type="month" name="card_expiration">
+    <label for="cvv">CVV</label>
+    <input id="cvv" type="number" maxlength="3" name="cvv">
+    <label for="order">OrderNumber</label>
+    <input id="order" type="number" maxlength="16" name="order_number">
+    <label for="sum">Sum</label>
+    <input id="sum" type="text" name="sum">
+    <input type="submit" name="submitButton" value="Send"/>
 </form>
 
+</body>
+</html>
