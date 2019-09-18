@@ -32,9 +32,18 @@ class Back
         $this->order_number = $order_number;
         $this->sum = $sum;
 
+
         $tempDate = explode('-', $this->card_expiration);
+        //$tempDate[0] - year
+        //$tempDate[1] - month
+        $dt = implode('', $tempDate);
+        $currentDate = date('Ym');
+
+        if ($dt < $currentDate) {
+            throw  new \Exception('Card is out of order!', 402);
+        }
         $resultDate = checkdate((int)$tempDate[1], 1, (int)$tempDate[0]);
-                $order_len = strlen((string)$this->order_number);
+        $order_len = strlen((string)$this->order_number);
 
 
         if (strlen((string)$this->card_number) != 16) {
@@ -67,7 +76,7 @@ class Back
         $order->order_number = $this->order_number;
         $order->sum = $this->sum;
 
-        $answer = Service::withdraw($order, $this);
+        $answer = Service::withdraw($order, $this->card_number, $this->cvv);
 
         if ($answer == 403) {
             header('Location: /Index/ErrorMoney');

@@ -2,7 +2,7 @@
 
 use App\Logic\Back;
 
-class ExampleTest extends \Codeception\Test\Unit
+class UnitTest extends \Codeception\Test\Unit
 {
     /**
      * @var \UnitTester
@@ -25,7 +25,7 @@ class ExampleTest extends \Codeception\Test\Unit
 
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Card_number is not valid');
-        $this->back = new Back(12345678, 'Ivan Fomin', '2019-01', 123, 100, 300);
+        $this->back = new Back(12345678, 'Ivan Fomin', '2019-10', 123, 100, 300);
         $this->fail("Long number");
     }
 
@@ -33,7 +33,7 @@ class ExampleTest extends \Codeception\Test\Unit
     {
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Card_holder is not valid');
-        $this->back = new Back(1234567891123456, 'Ivan Fomin ', '2019-01', 123, 100, 300);
+        $this->back = new Back(1234567891123456, 'Ivan Fomin ', '2019-10', 123, 100, 300);
         $this->fail("Too many spaces");
     }
 
@@ -41,7 +41,16 @@ class ExampleTest extends \Codeception\Test\Unit
     {
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Card_expiration is not valid');
-        $this->back = new Back(1234567891123456, 'Ivan Fomin', '06-70', 123, 1001, 300);
+        $this->back = new Back(1234567891123456, 'Ivan Fomin', '200000-20000', 123, 1001, 300);
+        $this->fail("Wrong date");
+
+    }
+
+    public function testWrongExpiration1()
+    {
+        $this->expectExceptionCode(402);
+        $this->expectExceptionMessage('Card is out of order');
+        $this->back = new Back(1234567891123456, 'Ivan Fomin', '2018-00', 123, 1001, 300);
         $this->fail("Wrong date");
 
     }
@@ -50,7 +59,7 @@ class ExampleTest extends \Codeception\Test\Unit
     {
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Cvv is not valid');
-        $this->back = new Back(1234567891123456, 'Ivan Fomin', '2019-01', 1234, 100, 300);
+        $this->back = new Back(1234567891123456, 'Ivan Fomin', '2019-10', 1234, 100, 300);
         $this->fail("Cvv wrong");
     }
 
@@ -58,7 +67,7 @@ class ExampleTest extends \Codeception\Test\Unit
     {
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Order_number is not valid');
-        $this->back = new Back(1234567891123456, 'Ivan Fomin', '2019-01', 123, 12345678912345678, 300);
+        $this->back = new Back(1234567891123456, 'Ivan Fomin', '2019-10', 123, 12345678912345678, 300);
         $this->fail("Order wrong");
     }
 
@@ -66,7 +75,7 @@ class ExampleTest extends \Codeception\Test\Unit
     {
         $this->expectExceptionCode(400);
         $this->expectExceptionMessage('Sum is not valid');
-        $this->back = new Back(1234567891123456, 'Ivan Fomin', '2019-01', 123, 100, -300);
+        $this->back = new Back(1234567891123456, 'Ivan Fomin', '2019-10', 123, 100, -300);
         $this->fail("Sum wrong");
     }
 }

@@ -1,6 +1,6 @@
 <?php 
 
-class CardExpirationCest
+class SystemCvv
 {
     public function _before(AcceptanceTester $I)
     {
@@ -14,7 +14,10 @@ class CardExpirationCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '1');
+         $I->fillField("Expiration", '2020-13');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
 
         $I->click('Send');
         $I->see('Card_expiration is not valid');
@@ -27,7 +30,10 @@ class CardExpirationCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '');
+         $I->fillField("Expiration", '2019-000');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
 
         $I->click('Send');
         $I->see('Card_expiration is not valid');
@@ -40,7 +46,10 @@ class CardExpirationCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '1 1');
+         $I->fillField("Expiration", '97-1111');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
 
         $I->click('Send');
         $I->see('Card_expiration is not valid');
@@ -53,7 +62,10 @@ class CardExpirationCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '20-20');
+         $I->fillField("Expiration", '10000000');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
 
         $I->click('Send');
         $I->see('Card_expiration is not valid');
@@ -66,9 +78,15 @@ class CardExpirationCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '201-20');
+         $I->fillField("Expiration", 'hello');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
 
         $I->click('Send');
         $I->see('Card_expiration is not valid');
     }
+
+
+
 }

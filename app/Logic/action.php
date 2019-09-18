@@ -11,7 +11,10 @@ try {
 
 } catch (Exception $exception) {
     $error = $exception->getMessage();
-    var_dump($error);
+    if($exception->getCode() === 402) {
+        include __DIR__ . '/../Templates/error_expiration.html';
+        exit();
+    }
     include __DIR__ . '/../Templates/errors.php';
 }
 

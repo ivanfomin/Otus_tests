@@ -3,55 +3,68 @@ Powered by PHPUnit 8.3.5 by Sebastian Bergmann and contributors.
 Running with seed: 
 
 
-[1mAcceptance Tests (33) [22m--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-- [35;1mIndexCept:[39;22m Perform actions and see result[32;1m✔[39;22m [35;1mIndexCept:[39;22m Perform actions and see result [32m(0.02s)[39m
+[1mAcceptance Tests (39) [22m--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- [35;1mIndexCept:[39;22m Perform actions and see result[32;1m✔[39;22m [35;1mIndexCept:[39;22m Perform actions and see result [32m(0.01s)[39m
 - [35;1mIndexCvvCept:[39;22m Run error[32;1m✔[39;22m [35;1mIndexCvvCept:[39;22m Run error [32m(0.00s)[39m
 - [35;1mIndexMoneyCept:[39;22m Run error money[32;1m✔[39;22m [35;1mIndexMoneyCept:[39;22m Run error money [32m(0.00s)[39m
-- [35;1mCardCvvCest:[39;22m Try to test cvv1[32;1m✔[39;22m [35;1mCardCvvCest:[39;22m Try to test cvv1 [32m(0.02s)[39m
-- [35;1mCardCvvCest:[39;22m Try to test cvv2[32;1m✔[39;22m [35;1mCardCvvCest:[39;22m Try to test cvv2 [32m(0.02s)[39m
-- [35;1mCardCvvCest:[39;22m Try to test cvv3[32;1m✔[39;22m [35;1mCardCvvCest:[39;22m Try to test cvv3 [32m(0.02s)[39m
-- [35;1mCardCvvCest:[39;22m Try to test cvv4[32;1m✔[39;22m [35;1mCardCvvCest:[39;22m Try to test cvv4 [32m(0.02s)[39m
-- [35;1mCardCvvCest:[39;22m Try to test cvv5[32;1m✔[39;22m [35;1mCardCvvCest:[39;22m Try to test cvv5 [32m(0.02s)[39m
-- [35;1mCardExpirationCest:[39;22m Try to test expiration1[32;1m✔[39;22m [35;1mCardExpirationCest:[39;22m Try to test expiration1 [32m(0.02s)[39m
-- [35;1mCardExpirationCest:[39;22m Try to test expiration2[32;1m✔[39;22m [35;1mCardExpirationCest:[39;22m Try to test expiration2 [32m(0.02s)[39m
-- [35;1mCardExpirationCest:[39;22m Try to test expiration3[32;1m✔[39;22m [35;1mCardExpirationCest:[39;22m Try to test expiration3 [32m(0.02s)[39m
-- [35;1mCardExpirationCest:[39;22m Try to test expiration4[32;1m✔[39;22m [35;1mCardExpirationCest:[39;22m Try to test expiration4 [32m(0.02s)[39m
-- [35;1mCardExpirationCest:[39;22m Try to test expiration5[32;1m✔[39;22m [35;1mCardExpirationCest:[39;22m Try to test expiration5 [32m(0.01s)[39m
-- [35;1mCardNumberCest:[39;22m Try to test number1[32;1m✔[39;22m [35;1mCardNumberCest:[39;22m Try to test number1 [32m(0.02s)[39m
+- [35;1mCardCvvCest:[39;22m Try to test cvv1[32;1m✔[39;22m [35;1mCardCvvCest:[39;22m Try to test cvv1 [32m(0.01s)[39m
+- [35;1mCardCvvCest:[39;22m Try to test cvv2[32;1m✔[39;22m [35;1mCardCvvCest:[39;22m Try to test cvv2 [32m(0.01s)[39m
+- [35;1mCardCvvCest:[39;22m Try to test cvv3[32;1m✔[39;22m [35;1mCardCvvCest:[39;22m Try to test cvv3 [32m(0.01s)[39m
+- [35;1mCardCvvCest:[39;22m Try to test cvv4[32;1m✔[39;22m [35;1mCardCvvCest:[39;22m Try to test cvv4 [32m(0.01s)[39m
+- [35;1mCardCvvCest:[39;22m Try to test cvv5[32;1m✔[39;22m [35;1mCardCvvCest:[39;22m Try to test cvv5 [32m(0.01s)[39m
+- [35;1mCardNumberCest:[39;22m Try to test number1[32;1m✔[39;22m [35;1mCardNumberCest:[39;22m Try to test number1 [32m(0.01s)[39m
 - [35;1mCardNumberCest:[39;22m Try to test number2[32;1m✔[39;22m [35;1mCardNumberCest:[39;22m Try to test number2 [32m(0.01s)[39m
-- [35;1mCardNumberCest:[39;22m Try to test number3[32;1m✔[39;22m [35;1mCardNumberCest:[39;22m Try to test number3 [32m(0.02s)[39m
-- [35;1mCardNumberCest:[39;22m Try to test number4[32;1m✔[39;22m [35;1mCardNumberCest:[39;22m Try to test number4 [32m(0.02s)[39m
-- [35;1mCardNumberCest:[39;22m Try to test number5[32;1m✔[39;22m [35;1mCardNumberCest:[39;22m Try to test number5 [32m(0.02s)[39m
-- [35;1mCardOrderCest:[39;22m Try to test order1[32;1m✔[39;22m [35;1mCardOrderCest:[39;22m Try to test order1 [32m(0.02s)[39m
-- [35;1mCardOrderCest:[39;22m Try to test order2[32;1m✔[39;22m [35;1mCardOrderCest:[39;22m Try to test order2 [32m(0.02s)[39m
-- [35;1mCardOrderCest:[39;22m Try to test order3[32;1m✔[39;22m [35;1mCardOrderCest:[39;22m Try to test order3 [32m(0.02s)[39m
-- [35;1mCardOrderCest:[39;22m Try to test order4[32;1m✔[39;22m [35;1mCardOrderCest:[39;22m Try to test order4 [32m(0.02s)[39m
-- [35;1mCardOrderCest:[39;22m Try to test order5[32;1m✔[39;22m [35;1mCardOrderCest:[39;22m Try to test order5 [32m(0.02s)[39m
-- [35;1mCardOwnerCest:[39;22m Try to test owner1[32;1m✔[39;22m [35;1mCardOwnerCest:[39;22m Try to test owner1 [32m(0.02s)[39m
-- [35;1mCardOwnerCest:[39;22m Try to test owner2[32;1m✔[39;22m [35;1mCardOwnerCest:[39;22m Try to test owner2 [32m(0.02s)[39m
-- [35;1mCardOwnerCest:[39;22m Try to test owner3[32;1m✔[39;22m [35;1mCardOwnerCest:[39;22m Try to test owner3 [32m(0.02s)[39m
-- [35;1mCardOwnerCest:[39;22m Try to test owner4[32;1m✔[39;22m [35;1mCardOwnerCest:[39;22m Try to test owner4 [32m(0.02s)[39m
-- [35;1mCardOwnerCest:[39;22m Try to test owner5[32;1m✔[39;22m [35;1mCardOwnerCest:[39;22m Try to test owner5 [32m(0.02s)[39m
-- [35;1mCardSumCest:[39;22m Try to test1[32;1m✔[39;22m [35;1mCardSumCest:[39;22m Try to test1 [32m(0.02s)[39m
-- [35;1mCardSumCest:[39;22m Try to test2[32;1m✔[39;22m [35;1mCardSumCest:[39;22m Try to test2 [32m(0.02s)[39m
-- [35;1mCardSumCest:[39;22m Try to test3[32;1m✔[39;22m [35;1mCardSumCest:[39;22m Try to test3 [32m(0.02s)[39m
-- [35;1mCardSumCest:[39;22m Try to test4[32;1m✔[39;22m [35;1mCardSumCest:[39;22m Try to test4 [32m(0.02s)[39m
+- [35;1mCardNumberCest:[39;22m Try to test number3[32;1m✔[39;22m [35;1mCardNumberCest:[39;22m Try to test number3 [32m(0.01s)[39m
+- [35;1mCardNumberCest:[39;22m Try to test number4[32;1m✔[39;22m [35;1mCardNumberCest:[39;22m Try to test number4 [32m(0.01s)[39m
+- [35;1mCardNumberCest:[39;22m Try to test number5[32;1m✔[39;22m [35;1mCardNumberCest:[39;22m Try to test number5 [32m(0.01s)[39m
+- [35;1mCardOrderCest:[39;22m Try to test order1[32;1m✔[39;22m [35;1mCardOrderCest:[39;22m Try to test order1 [32m(0.01s)[39m
+- [35;1mCardOrderCest:[39;22m Try to test order2[32;1m✔[39;22m [35;1mCardOrderCest:[39;22m Try to test order2 [32m(0.01s)[39m
+- [35;1mCardOrderCest:[39;22m Try to test order3[32;1m✔[39;22m [35;1mCardOrderCest:[39;22m Try to test order3 [32m(0.01s)[39m
+- [35;1mCardOrderCest:[39;22m Try to test order4[32;1m✔[39;22m [35;1mCardOrderCest:[39;22m Try to test order4 [32m(0.01s)[39m
+- [35;1mCardOrderCest:[39;22m Try to test order5[32;1m✔[39;22m [35;1mCardOrderCest:[39;22m Try to test order5 [32m(0.01s)[39m
+- [35;1mCardOwnerCest:[39;22m Try to test owner1[32;1m✔[39;22m [35;1mCardOwnerCest:[39;22m Try to test owner1 [32m(0.01s)[39m
+- [35;1mCardOwnerCest:[39;22m Try to test owner2[32;1m✔[39;22m [35;1mCardOwnerCest:[39;22m Try to test owner2 [32m(0.01s)[39m
+- [35;1mCardOwnerCest:[39;22m Try to test owner3[32;1m✔[39;22m [35;1mCardOwnerCest:[39;22m Try to test owner3 [32m(0.01s)[39m
+- [35;1mCardOwnerCest:[39;22m Try to test owner4[32;1m✔[39;22m [35;1mCardOwnerCest:[39;22m Try to test owner4 [32m(0.01s)[39m
+- [35;1mCardOwnerCest:[39;22m Try to test owner5[32;1m✔[39;22m [35;1mCardOwnerCest:[39;22m Try to test owner5 [32m(0.01s)[39m
+- [35;1mCardSumCest:[39;22m Try to test1[32;1m✔[39;22m [35;1mCardSumCest:[39;22m Try to test1 [32m(0.01s)[39m
+- [35;1mCardSumCest:[39;22m Try to test2[32;1m✔[39;22m [35;1mCardSumCest:[39;22m Try to test2 [32m(0.01s)[39m
+- [35;1mCardSumCest:[39;22m Try to test3[32;1m✔[39;22m [35;1mCardSumCest:[39;22m Try to test3 [32m(0.01s)[39m
+- [35;1mCardSumCest:[39;22m Try to test4[32;1m✔[39;22m [35;1mCardSumCest:[39;22m Try to test4 [32m(0.01s)[39m
 - [35;1mCardSumCest:[39;22m Try to test5[32;1m✔[39;22m [35;1mCardSumCest:[39;22m Try to test5 [32m(0.01s)[39m
+- [35;1mSuccessCest:[39;22m Try to success1[32;1m✔[39;22m [35;1mSuccessCest:[39;22m Try to success1 [32m(0.02s)[39m
+- [35;1mSuccessCest:[39;22m Try to success2[32;1m✔[39;22m [35;1mSuccessCest:[39;22m Try to success2 [32m(0.02s)[39m
+- [35;1mSuccessCest:[39;22m Try to success3[32;1m✔[39;22m [35;1mSuccessCest:[39;22m Try to success3 [32m(0.02s)[39m
+- [35;1mSuccessCest:[39;22m Try to success4[32;1m✔[39;22m [35;1mSuccessCest:[39;22m Try to success4 [32m(0.02s)[39m
+- [35;1mSuccessCest:[39;22m Try to success5[32;1m✔[39;22m [35;1mSuccessCest:[39;22m Try to success5 [32m(0.02s)[39m
+- [35;1mValidCardCest:[39;22m Try to test card1[32;1m✔[39;22m [35;1mValidCardCest:[39;22m Try to test card1 [32m(0.01s)[39m
+- [35;1mValidCardCest:[39;22m Try to test card2[32;1m✔[39;22m [35;1mValidCardCest:[39;22m Try to test card2 [32m(0.01s)[39m
+- [35;1mValidCardCest:[39;22m Try to test card3[32;1m✔[39;22m [35;1mValidCardCest:[39;22m Try to test card3 [32m(0.01s)[39m
+- [35;1mValidCardCest:[39;22m Try to test card4[32;1m✔[39;22m [35;1mValidCardCest:[39;22m Try to test card4 [32m(0.01s)[39m
+- [35;1mValidCardCest:[39;22m Try to test card5[32;1m✔[39;22m [35;1mValidCardCest:[39;22m Try to test card5 [32m(0.01s)[39m
+- [35;1mValidCardCest:[39;22m Try to test card6[32;1m✔[39;22m [35;1mValidCardCest:[39;22m Try to test card6 [32m(0.01s)[39m
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 [1mFunctional Tests (0) [22m---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-[1mUnit Tests (6) [22m---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-- [35;1mExampleTest:[39;22m Wrong card number[32;1m✔[39;22m [35;1mExampleTest:[39;22m Wrong card number [32m(0.00s)[39m
-- [35;1mExampleTest:[39;22m Wrong card holder[32;1m✔[39;22m [35;1mExampleTest:[39;22m Wrong card holder [32m(0.00s)[39m
-- [35;1mExampleTest:[39;22m Wrong expiration[32;1m✔[39;22m [35;1mExampleTest:[39;22m Wrong expiration [32m(0.00s)[39m
-- [35;1mExampleTest:[39;22m Wrong cvv[32;1m✔[39;22m [35;1mExampleTest:[39;22m Wrong cvv [32m(0.00s)[39m
-- [35;1mExampleTest:[39;22m Wrong order[32;1m✔[39;22m [35;1mExampleTest:[39;22m Wrong order [32m(0.00s)[39m
-- [35;1mExampleTest:[39;22m Wrong sum[32;1m✔[39;22m [35;1mExampleTest:[39;22m Wrong sum [32m(0.00s)[39m
+[1mUnit Tests (13) [22m--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+- [35;1mTypeErrorTest:[39;22m Construct card numer[32;1m✔[39;22m [35;1mTypeErrorTest:[39;22m Construct card numer [32m(0.00s)[39m
+- [35;1mTypeErrorTest:[39;22m Construct cvv[32;1m✔[39;22m [35;1mTypeErrorTest:[39;22m Construct cvv [32m(0.00s)[39m
+- [35;1mTypeErrorTest:[39;22m Construct order[32;1m✔[39;22m [35;1mTypeErrorTest:[39;22m Construct order [32m(0.00s)[39m
+- [35;1mTypeErrorTest:[39;22m Construct sum[32;1m✔[39;22m [35;1mTypeErrorTest:[39;22m Construct sum [32m(0.00s)[39m
+- [35;1mUnitTest:[39;22m Wrong card number[32;1m✔[39;22m [35;1mUnitTest:[39;22m Wrong card number [32m(0.00s)[39m
+- [35;1mUnitTest:[39;22m Wrong card holder[32;1m✔[39;22m [35;1mUnitTest:[39;22m Wrong card holder [32m(0.00s)[39m
+- [35;1mUnitTest:[39;22m Wrong expiration[32;1m✔[39;22m [35;1mUnitTest:[39;22m Wrong expiration [32m(0.00s)[39m
+- [35;1mUnitTest:[39;22m Wrong expiration1[32;1m✔[39;22m [35;1mUnitTest:[39;22m Wrong expiration1 [32m(0.00s)[39m
+- [35;1mUnitTest:[39;22m Wrong cvv[32;1m✔[39;22m [35;1mUnitTest:[39;22m Wrong cvv [32m(0.00s)[39m
+- [35;1mUnitTest:[39;22m Wrong order[32;1m✔[39;22m [35;1mUnitTest:[39;22m Wrong order [32m(0.00s)[39m
+- [35;1mUnitTest:[39;22m Wrong sum[32;1m✔[39;22m [35;1mUnitTest:[39;22m Wrong sum [32m(0.00s)[39m
+- [35;1mCvvTest:[39;22m Card has cvv[32;1m✔[39;22m [35;1mCvvTest:[39;22m Card has cvv [32m(0.01s)[39m
+- [35;1mOrderTest:[39;22m Order is paid[32;1m✔[39;22m [35;1mOrderTest:[39;22m Order is paid [32m(0.00s)[39m
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Time: 800 ms, Memory: 12.00 MB
+Time: 683 ms, Memory: 12.00 MB
 
-[30;42mOK (39 tests, 45 assertions)[0m
+[30;42mOK (52 tests, 67 assertions)[0m

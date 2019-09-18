@@ -23,7 +23,7 @@ try {
 }
 
 try {
-    $testBack = new Back(1234567891234567, 'qwerty QWERTY', '0000-05', '123', '123456', 200);
+    $testBack = new Back(1234567891234567, 'qwerty QWERTY', 'hello ki', '123', '123456', 200);
 
 } catch (Exception $exception) {
     if ($exception->getMessage() === 'Card_expiration is not valid' && $exception->getCode() === 400) {

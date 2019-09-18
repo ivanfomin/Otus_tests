@@ -1,0 +1,124 @@
+<br />
+<font size='1'><table class='xdebug-error xe-notice' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Notice: Trying to get property 'cvv' of non-object in /home/ioan/PhpstormProjects/otus_tests/app/Service.php on line <i>15</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>358824</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/home/ioan/PhpstormProjects/otus_tests/app/Logic/action.php' bgcolor='#eeeeec'>.../action.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0005</td><td bgcolor='#eeeeec' align='right'>366184</td><td bgcolor='#eeeeec'>App\Logic\Back->__construct(  )</td><td title='/home/ioan/PhpstormProjects/otus_tests/app/Logic/action.php' bgcolor='#eeeeec'>.../action.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0007</td><td bgcolor='#eeeeec' align='right'>369504</td><td bgcolor='#eeeeec'>App\Service::withdraw(  )</td><td title='/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php' bgcolor='#eeeeec'>.../Back.php<b>:</b>77</td></tr>
+<tr><th colspan='5' align='left' bgcolor='#e9b96e'>Dump <i>$_SERVER</i></th></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_SERVER['REMOTE_ADDR']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'127.0.0.1'</font> <i>(length=9)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_SERVER['REQUEST_METHOD']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'POST'</font> <i>(length=4)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_SERVER['REQUEST_URI']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'/app/Logic/action.php'</font> <i>(length=21)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_SERVER['HTTP_USER_AGENT']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'Symfony BrowserKit'</font> <i>(length=18)</i>
+</pre></td></tr>
+<tr><th colspan='5' align='left' bgcolor='#e9b96e'>Dump <i>$_SESSION</i></th></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_SESSION['*']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><i>undefined</i></td></tr>
+<tr><th colspan='5' align='left' bgcolor='#e9b96e'>Dump <i>$_REQUEST</i></th></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_REQUEST['card_number']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'1234567891234567'</font> <i>(length=16)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_REQUEST['card_holder']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'Ivan Fomin'</font> <i>(length=10)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_REQUEST['card_expiration']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'2020-05'</font> <i>(length=7)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_REQUEST['cvv']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'123'</font> <i>(length=3)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_REQUEST['order_number']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'123'</font> <i>(length=3)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_REQUEST['sum']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'100'</font> <i>(length=3)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$_REQUEST['submitButton']&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>string</small> <font color='#cc0000'>'Send'</font> <i>(length=4)</i>
+</pre></td></tr>
+<tr><th align='left' colspan='5' bgcolor='#e9b96e'>Variables in local scope (#3)</th></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$back&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small>
+<b>object</b>(<i>App\Logic\Back</i>)[<i>4</i>]
+  <i>public</i> 'card_number' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>1234567891234567</font>
+  <i>public</i> 'card_holder' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'Ivan Fomin'</font> <i>(length=10)</i>
+  <i>public</i> 'card_expiration' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2020-05'</font> <i>(length=7)</i>
+  <i>public</i> 'cvv' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>123</font>
+  <i>public</i> 'order_number' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>123</font>
+  <i>public</i> 'sum' <font color='#888a85'>=&gt;</font> <small>float</small> <font color='#f57900'>100</font>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$card&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small><small>boolean</small> <font color='#75507b'>false</font>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$order&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Service.php:15:</small>
+<b>object</b>(<i>App\Models\Order</i>)[<i>5</i>]
+  <i>public</i> 'order_number' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>123</font>
+  <i>public</i> 'sum' <font color='#888a85'>=&gt;</font> <small>float</small> <font color='#f57900'>100</font>
+  <i>public</i> 'id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+</pre></td></tr>
+</table></font>
+<br />
+<font size='1'><table class='xdebug-error xe-warning' dir='ltr' border='1' cellspacing='0' cellpadding='1'>
+<tr><th align='left' bgcolor='#f57900' colspan="5"><span style='background-color: #cc0000; color: #fce94f; font-size: x-large;'>( ! )</span> Warning: Cannot modify header information - headers already sent by (output started at /home/ioan/PhpstormProjects/otus_tests/app/Service.php:15) in /home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php on line <i>85</i></th></tr>
+<tr><th align='left' bgcolor='#e9b96e' colspan='5'>Call Stack</th></tr>
+<tr><th align='center' bgcolor='#eeeeec'>#</th><th align='left' bgcolor='#eeeeec'>Time</th><th align='left' bgcolor='#eeeeec'>Memory</th><th align='left' bgcolor='#eeeeec'>Function</th><th align='left' bgcolor='#eeeeec'>Location</th></tr>
+<tr><td bgcolor='#eeeeec' align='center'>1</td><td bgcolor='#eeeeec' align='center'>0.0001</td><td bgcolor='#eeeeec' align='right'>358824</td><td bgcolor='#eeeeec'>{main}(  )</td><td title='/home/ioan/PhpstormProjects/otus_tests/app/Logic/action.php' bgcolor='#eeeeec'>.../action.php<b>:</b>0</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0005</td><td bgcolor='#eeeeec' align='right'>366184</td><td bgcolor='#eeeeec'>App\Logic\Back->__construct(  )</td><td title='/home/ioan/PhpstormProjects/otus_tests/app/Logic/action.php' bgcolor='#eeeeec'>.../action.php<b>:</b>10</td></tr>
+<tr><td bgcolor='#eeeeec' align='center'>3</td><td bgcolor='#eeeeec' align='center'>0.0024</td><td bgcolor='#eeeeec' align='right'>414952</td><td bgcolor='#eeeeec'><a href='http://www.php.net/function.header' target='_new'>header</a>
+(  )</td><td title='/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php' bgcolor='#eeeeec'>.../Back.php<b>:</b>85</td></tr>
+<tr><th align='left' colspan='5' bgcolor='#e9b96e'>Variables in local scope (#2)</th></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$answer&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>int</small> <font color='#4e9a06'>401</font>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$card_expiration&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>string</small> <font color='#cc0000'>'2020-05'</font> <i>(length=7)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$card_holder&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>string</small> <font color='#cc0000'>'Ivan Fomin'</font> <i>(length=10)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$card_number&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>int</small> <font color='#4e9a06'>1234567891234567</font>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$currentDate&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>string</small> <font color='#cc0000'>'201909'</font> <i>(length=6)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$cvv&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>int</small> <font color='#4e9a06'>123</font>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$dt&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>string</small> <font color='#cc0000'>'202005'</font> <i>(length=6)</i>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$order&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small>
+<b>object</b>(<i>App\Models\Order</i>)[<i>5</i>]
+  <i>public</i> 'order_number' <font color='#888a85'>=&gt;</font> <small>int</small> <font color='#4e9a06'>123</font>
+  <i>public</i> 'sum' <font color='#888a85'>=&gt;</font> <small>float</small> <font color='#f57900'>100</font>
+  <i>public</i> 'id' <font color='#888a85'>=&gt;</font> <font color='#3465a4'>null</font>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$order_len&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>int</small> <font color='#4e9a06'>3</font>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$order_number&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>int</small> <font color='#4e9a06'>123</font>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$resultDate&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>boolean</small> <font color='#75507b'>true</font>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$sum&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small><small>float</small> <font color='#f57900'>100</font>
+</pre></td></tr>
+<tr><td colspan='2' align='right' bgcolor='#eeeeec' valign='top'><pre>$tempDate&nbsp;=</pre></td><td colspan='3' bgcolor='#eeeeec'><pre class='xdebug-var-dump' dir='ltr'>
+<small>/home/ioan/PhpstormProjects/otus_tests/app/Logic/Back.php:85:</small>
+<b>array</b> <i>(size=2)</i>
+  0 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'2020'</font> <i>(length=4)</i>
+  1 <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'05'</font> <i>(length=2)</i>
+</pre></td></tr>
+</table></font>

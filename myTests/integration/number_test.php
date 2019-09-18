@@ -4,7 +4,7 @@
 //See
 // <p style="color: red">Card number
 
-$_POST['card_number'] = 1234567;
+$_POST['card_number'] = 12345678901234567;
 $_POST['card_holder'] = 'Ivan Fomin';
 
 include __DIR__ . '/../../app/Logic/action.php';

@@ -81,7 +81,7 @@ class CardSumCest
         $I->fillField("Expiration", '2020-05');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 123);
-        $I->fillField("Sum", '0');
+        $I->fillField("Sum", -100);
 
         $I->click('Send');
         $I->see('Sum is not valid');

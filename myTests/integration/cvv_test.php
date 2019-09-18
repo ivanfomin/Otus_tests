@@ -4,7 +4,7 @@
 //See
 //<p style="color: red">CVV
 
-$_POST['card_number'] = 123456;
+$_POST['card_number'] = 1234567890123456;
 $_POST['card_holder'] = 'Ivan Fomin';
 $_POST['card_expiration'] = '2020-06';
 $_POST['cvv'] = 1234;

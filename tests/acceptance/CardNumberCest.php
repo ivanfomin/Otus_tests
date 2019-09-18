@@ -14,6 +14,10 @@ class CardNumberCest
 
         $I->fillField('CardNumber', 123);
         $I->fillField("Owner", 'Fomin Ivan');
+        $I->fillField("Expiration", '2020-05');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
 
         $I->click('Send');
         $I->see('Card_number is not valid');
@@ -24,9 +28,13 @@ class CardNumberCest
     {
         $I->amOnPage('/');
 
-
+        $I->fillField("Expiration", '2020-05');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
         $I->fillField('CardNumber', 1234567);
         $I->fillField("Owner", 'Fomin Ivan');
+
 
         $I->click('Send');
         $I->see('Card_number is not valid');
@@ -40,6 +48,10 @@ class CardNumberCest
 
         $I->fillField('CardNumber', 'hello');
         $I->fillField("Owner", 'Fomin Ivan');
+        $I->fillField("Expiration", '2020-05');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
 
         $I->click('Send');
         $I->see('Card_number is not valid');
@@ -53,6 +65,10 @@ class CardNumberCest
 
         $I->fillField('CardNumber', '123456hello');
         $I->fillField("Owner", 'Fomin Ivan');
+        $I->fillField("Expiration", '2020-05');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
 
         $I->click('Send');
         $I->see('Card_number is not valid');
@@ -66,6 +82,10 @@ class CardNumberCest
 
         $I->fillField('CardNumber', -1);
         $I->fillField("Owner", 'Fomin Ivan');
+        $I->fillField("Expiration", '2020-05');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
 
         $I->click('Send');
         $I->see('Card_number is not valid');
