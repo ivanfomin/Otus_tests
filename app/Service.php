@@ -12,8 +12,6 @@ class Service
     {
         $card = Card::findByNumber($card_number);
 
-        var_dump($card->expiration);
-        var_dump(date('Y-m'));
         if ($card->expiration < date('Y-m')) {
             return 402;
         }
