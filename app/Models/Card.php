@@ -9,10 +9,12 @@ class Card extends Model
 {
     public static $table = 'cards';
 
-    public $number;
-    public $holder;
-    public $cvv;
-    public $money;
+    public int $number;
+    public string $holder;
+    public int $cvv;
+    public float $money;
+    public string $expiration;
+
 
     public static function findByNumber(int $number)
     {

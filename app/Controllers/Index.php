@@ -23,6 +23,12 @@ class Index extends Controller
         http_response_code(401);
     }
 
+    public function actionErrorCard()
+    {
+        $this->view->display('error_expiration.html');
+        http_response_code(402);
+    }
+
     public function actionSuccess()
     {
         $this->view->display('success.html');

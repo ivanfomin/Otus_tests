@@ -83,6 +83,11 @@ class Back
             exit();
         }
 
+        if ($answer == 402) {
+            header('Location: /Index/ErrorCard');
+            exit();
+        }
+
         if ($answer == 401) {
             header('Location: /Index/ErrorCvv');
             exit();

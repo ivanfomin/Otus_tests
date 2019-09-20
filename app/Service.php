@@ -12,7 +12,11 @@ class Service
     {
         $card = Card::findByNumber($card_number);
 
-
+        var_dump($card->expiration);
+        var_dump(date('Y-m'));
+        if ($card->expiration < date('Y-m')) {
+            return 402;
+        }
         if ($card->cvv != $cvv) {
 
             return 401;
@@ -31,10 +35,10 @@ class Service
 
     }
 
-    public static function setOrderIsPaid(Order $order, int $sum, int $number) : bool
+    public static function setOrderIsPaid(Order $order, int $sum, int $number): bool
     {
 
-        if($order->sum == $sum && $order->order_number == $number) {
+        if ($order->sum == $sum && $order->order_number == $number) {
             $order->save();
             return true;
         }
