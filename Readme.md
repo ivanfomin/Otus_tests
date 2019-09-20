@@ -13,12 +13,20 @@ tests/acceptance/ValidCarsCest.php<br>
 А также типами полей формы  type="number" <br>
 Но для обработки данной ошибке добавил юнит тест
 <br>
-tests/unit/TypeErrorTest.php<br> <br>
+tests/unit/TypeErrorTest.php<br>
+https://github.com/ivanfomin/Otus_tests/blob/93963653b6ef2c887beed5d47d2386d9a81dbc0d/tests/unit/TypeErrorTest.php#L5
+<br>
+<br>
 Позитивный тест на успешное выполнение <br>
-tests/acceptance/SuccessCest.php<br><br>
+tests/acceptance/SuccessCest.php<br>
+https://github.com/ivanfomin/Otus_tests/blob/93963653b6ef2c887beed5d47d2386d9a81dbc0d/tests/acceptance/SuccessCest.php#L3
+<br>
+<br>
 
 Системные тесты: Cvv, OrderIsPaid<br>
  tests/unit/service
+ <br>
+ https://github.com/ivanfomin/Otus_tests/tree/master/tests/unit/service
  <br>
  Последнии изменения делал исключительно с помощью Codeception
 
