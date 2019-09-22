@@ -30,7 +30,7 @@ class CvvTest extends \Codeception\Test\Unit
         //not correct cvv
         $this->assertEquals(401, Service::withdraw($order, 1234567891234567, 122));
 
-        $order->sum = 10000; //too much
+        $order->sum = 100000; //too much
 
         $this->assertEquals(403, Service::withdraw($order, 1234567891234567, 123));
 

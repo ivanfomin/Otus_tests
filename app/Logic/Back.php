@@ -9,7 +9,7 @@ class Back
 {
     public int $card_number;
     public string $card_holder;
-    public $card_expiration;
+    public string $card_expiration;
     public int $cvv;
     public int $order_number;
     public float $sum;
@@ -18,12 +18,14 @@ class Back
      * Back constructor.
      * @param int $card_number
      * @param string $card_holder
-     * @param $card_expiration
+     * @param string $card_expiration
      * @param int $cvv
      * @param int $order_number
      * @param float $sum
+     *
+     *
      */
-    public function __construct(int $card_number, string $card_holder, $card_expiration, int $cvv, int $order_number, float $sum)
+    public function __construct(int $card_number, string $card_holder, string $card_expiration, int $cvv, int $order_number, float $sum)
     {
         $this->card_number = $card_number;
         $this->card_holder = $card_holder;
@@ -32,17 +34,10 @@ class Back
         $this->order_number = $order_number;
         $this->sum = $sum;
 
+        $tempDate = explode('/', $this->card_expiration);
+        $tempDate[0] = (int)$tempDate[0];
+        $tempDate[1] = (int)$tempDate[1];
 
-        $tempDate = explode('-', $this->card_expiration);
-        //$tempDate[0] - year
-        //$tempDate[1] - month
-        $dt = implode('', $tempDate);
-        $currentDate = date('Ym');
-
-        if ($dt < $currentDate) {
-            throw  new \Exception('Card is out of order!', 402);
-        }
-        $resultDate = checkdate((int)$tempDate[1], 1, (int)$tempDate[0]);
         $order_len = strlen((string)$this->order_number);
 
 
@@ -55,9 +50,11 @@ class Back
             throw new \Exception("Card_holder is not valid", 400);
         }
 
-        if ($resultDate !== true) {
-            throw new \Exception ("Card_expiration is not valid", 400);
+        if (count($tempDate) > 2 || $tempDate[0] > 12 || $tempDate[1] < 19 || $tempDate[1] > 21 || !is_int($tempDate[0] || is_int($tempDate[1]))) {
+            throw  new \Exception('Card_expiration is not valid', 400);
+
         }
+
 
         if (strlen((string)$this->cvv) != 3) {
             throw new \Exception("Cvv is not valid", 400);

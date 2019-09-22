@@ -14,7 +14,7 @@ class CardOrderCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 0);
 
@@ -29,7 +29,7 @@ class CardOrderCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", -123);
 
@@ -44,7 +44,7 @@ class CardOrderCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 1111111111111111123);
 
@@ -59,7 +59,7 @@ class CardOrderCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 11111111111111111234);
 
@@ -74,7 +74,7 @@ class CardOrderCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 111111111111111112345);
 

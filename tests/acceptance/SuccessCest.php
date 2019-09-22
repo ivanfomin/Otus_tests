@@ -14,9 +14,9 @@ class SuccessCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 123);
-        $I->fillField("OrderNumber", 136);
+        $I->fillField("OrderNumber", 138);
         $I->fillField("Sum", 100);
 
         $I->click('Send');
@@ -30,7 +30,7 @@ class SuccessCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Fomin Ivan');
-        $I->fillField("Expiration", '2019-12');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 132);
         $I->fillField("Sum", 1000);
@@ -46,7 +46,7 @@ class SuccessCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-06');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 133);
         $I->fillField("Sum", 1);
@@ -62,7 +62,7 @@ class SuccessCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-06');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 134);
         $I->fillField("Sum", 200);
@@ -78,7 +78,7 @@ class SuccessCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan');
-        $I->fillField("Expiration", '2020-12');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 135);
         $I->fillField("Sum", 999);

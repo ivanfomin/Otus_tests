@@ -14,7 +14,7 @@
 
 <form action="/app/Logic/action.php" method="post">
     <?php
-    echo '<p>'. $error . '</p>';
+    echo '<p>' . $error . '</p>';
     if (isset($error) && $error === 'Card_number is not valid') {
         echo '<p style="color: red">Card number<input type="number" minlength="16" size="16" name="card_number"></p>';
     } else {
@@ -28,9 +28,9 @@
     }
 
     if (isset($error) && $error === 'Card_expiration is not valid') {
-        echo '<p style="color: red">Expiration<input type="month" name="card_expiration"></p>';
+        echo '<p style="color: red">Expiration<input type="text" value="" name="card_expiration" /></p>';
     } else {
-        echo '<p>Expiration<input type="month" name="card_expiration"></p>';
+        echo '<p>Expiration<input type="text" value="" name="card_expiration" /></p>';
     }
 
     if (isset($error) && $error === 'Cvv is not valid') {

@@ -1,6 +1,6 @@
 <?php 
 
-class SystemCvv
+class CardExpirationCest
 {
     public function _before(AcceptanceTester $I)
     {
@@ -14,7 +14,7 @@ class SystemCvv
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-         $I->fillField("Expiration", '2020-13');
+         $I->fillField("Expiration", '13/19');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 123);
         $I->fillField("Sum", 100);
@@ -30,7 +30,7 @@ class SystemCvv
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-         $I->fillField("Expiration", '2019-000');
+         $I->fillField("Expiration", '12/18');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 123);
         $I->fillField("Sum", 100);
@@ -46,7 +46,7 @@ class SystemCvv
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-         $I->fillField("Expiration", '97-1111');
+         $I->fillField("Expiration", '11/19/12');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 123);
         $I->fillField("Sum", 100);
@@ -87,6 +87,84 @@ class SystemCvv
         $I->see('Card_expiration is not valid');
     }
 
+    public function tryToTestExpiration6(AcceptanceTester $I)
+    {
+        $I->amOnPage('/');
 
+
+        $I->fillField('CardNumber', 1234567891234567);
+        $I->fillField("Owner", 'Ivan Fomin');
+         $I->fillField("Expiration", '10 19');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
+
+        $I->click('Send');
+        $I->see('Card_expiration is not valid');
+    }
+
+    public function tryToTestExpiration7(AcceptanceTester $I)
+    {
+        $I->amOnPage('/');
+
+
+        $I->fillField('CardNumber', 1234567891234567);
+        $I->fillField("Owner", 'Ivan Fomin');
+         $I->fillField("Expiration", '10.19');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
+
+        $I->click('Send');
+        $I->see('Card_expiration is not valid');
+    }
+
+    public function tryToTestExpiration8(AcceptanceTester $I)
+    {
+        $I->amOnPage('/');
+
+
+        $I->fillField('CardNumber', 1234567891234567);
+        $I->fillField("Owner", 'Ivan Fomin');
+         $I->fillField("Expiration", '10-19');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
+
+        $I->click('Send');
+        $I->see('Card_expiration is not valid');
+    }
+
+    public function tryToTestExpiration9(AcceptanceTester $I)
+    {
+        $I->amOnPage('/');
+
+
+        $I->fillField('CardNumber', 1234567891234567);
+        $I->fillField("Owner", 'Ivan Fomin');
+         $I->fillField("Expiration", '10/19a');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
+
+        $I->click('Send');
+        $I->see('Card_expiration is not valid');
+    }
+
+    public function tryToTestExpiration10(AcceptanceTester $I)
+    {
+        $I->amOnPage('/');
+
+
+        $I->fillField('CardNumber', 1234567891234567);
+        $I->fillField("Owner", 'Ivan Fomin');
+         $I->fillField("Expiration", '10a/19');
+        $I->fillField("CVV", 123);
+        $I->fillField("OrderNumber", 123);
+        $I->fillField("Sum", 100);
+
+        $I->click('Send');
+        $I->see('Card_expiration is not valid');
+    }
 
 }

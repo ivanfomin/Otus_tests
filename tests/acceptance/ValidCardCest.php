@@ -12,12 +12,12 @@ class ValidCardCest
         $I->amOnPage('/');
 
 
-        $I->fillField('CardNumber', 1234567891234567);
+        $I->fillField('CardNumber', 1122334455667788);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2019-08');
+        $I->fillField("Expiration", '08/20');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 123);
-        $I->fillField("Sum", 0);
+        $I->fillField("Sum", 10);
 
         $I->click('Send');
         $I->see('Ваша карта устарела, проверьте срок действия!!!');
@@ -28,12 +28,12 @@ class ValidCardCest
         $I->amOnPage('/');
 
 
-        $I->fillField('CardNumber', 1234567891234567);
+        $I->fillField('CardNumber', 1122334455667788);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '97-11');
+        $I->fillField("Expiration", '10/21');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 123);
-        $I->fillField("Sum", 0);
+        $I->fillField("Sum", 10);
 
         $I->click('Send');
         $I->see('Ваша карта устарела, проверьте срок действия!!!');
@@ -44,12 +44,12 @@ class ValidCardCest
         $I->amOnPage('/');
 
 
-        $I->fillField('CardNumber', 1234567891234567);
+        $I->fillField('CardNumber', 1122334455667788);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '11-97');
+        $I->fillField("Expiration", '11/21');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 123);
-        $I->fillField("Sum", 0);
+        $I->fillField("Sum", 10);
 
         $I->click('Send');
         $I->see('Ваша карта устарела, проверьте срок действия!!!');
@@ -60,12 +60,12 @@ class ValidCardCest
         $I->amOnPage('/');
 
 
-        $I->fillField('CardNumber', 1234567891234567);
+        $I->fillField('CardNumber', 1122334455667788);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '0000');
+        $I->fillField("Expiration", '11/19');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 123);
-        $I->fillField("Sum", 0);
+        $I->fillField("Sum", 10);
 
         $I->click('Send');
         $I->see('Ваша карта устарела, проверьте срок действия!!!');
@@ -76,12 +76,12 @@ class ValidCardCest
         $I->amOnPage('/');
 
 
-        $I->fillField('CardNumber', 1234567891234567);
+        $I->fillField('CardNumber', 1122334455667788);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '');
+        $I->fillField("Expiration", '11/21');
         $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 123);
-        $I->fillField("Sum", 0);
+        $I->fillField("Sum", 10);
 
         $I->click('Send');
         $I->see('Ваша карта устарела, проверьте срок действия!!!');
@@ -92,10 +92,10 @@ class ValidCardCest
         $I->amOnPage('/');
 
 
-        $I->fillField('CardNumber', 'string');
+        $I->fillField('CardNumber', 1122334455667788);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2018-10');
-        $I->fillField("CVV", 'string');
+        $I->fillField("Expiration", '11/20');
+        $I->fillField("CVV", 123);
         $I->fillField("OrderNumber", 123);
         $I->fillField("Sum", 100);
 

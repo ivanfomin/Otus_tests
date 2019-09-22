@@ -14,7 +14,7 @@ class CardCvvCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", '2020');
 
         $I->click('Send');
@@ -28,7 +28,7 @@ class CardCvvCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 2020);
 
         $I->click('Send');
@@ -42,7 +42,7 @@ class CardCvvCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 12);
 
         $I->click('Send');
@@ -56,7 +56,7 @@ class CardCvvCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", 12345);
 
         $I->click('Send');
@@ -70,7 +70,7 @@ class CardCvvCest
 
         $I->fillField('CardNumber', 1234567891234567);
         $I->fillField("Owner", 'Ivan Fomin');
-        $I->fillField("Expiration", '2020-05');
+        $I->fillField("Expiration", '10/20');
         $I->fillField("CVV", -1);
 
         $I->click('Send');

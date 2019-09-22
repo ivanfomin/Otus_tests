@@ -6,24 +6,28 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+
 </head>
 <body>
 
 
 <p>Введите данные для оплаты</p>
-<form method="post" action="/app/Logic/action.php" id="update_form">
+<form method="post" action="/app/Logic/action.php" id="update_form" name="input">
     <label for="number">CardNumber</label>
-    <input id="number" type="number" minlength="16" size="16" name="card_number">
+    <input id="number" type="number" minlength="16" size="16" name="card_number"><br>
     <label for="card">Owner</label>
-    <input id="card" type="text" name="card_holder">
-    <label for="expiration">Expiration</label>
-    <input id="expiration" type="month" name="card_expiration">
+    <input id="card" type="text" name="card_holder"><br>
+    <label for="expitation">Expiration</label>
+    <input id="expitation" type="text" value="11/19" name="card_expiration"/><br>
     <label for="cvv">CVV</label>
-    <input id="cvv" type="number" maxlength="3" name="cvv">
-    <label for="order">OrderNumber</label>
-    <input id="order" type="number" maxlength="16" name="order_number">
+    <input id="cvv" type="number" maxlength="3" name="cvv"><br>
+    <label for="order">OrderNumber</label><br>
+    <input id="order" type="number" maxlength="16" name="order_number"><br>
     <label for="sum">Sum</label>
-    <input id="sum" type="text" name="sum">
+
+    <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/>
+    <input id="sum" type="text" name="sum"><br>
     <input type="submit" name="submitButton" value="Send"/>
 </form>
 
