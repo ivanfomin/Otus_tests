@@ -50,7 +50,10 @@ class Back
             throw new \Exception("Card_holder is not valid", 400);
         }
 
-        if (count($tempDate) > 2 || $tempDate[0] > 12 || $tempDate[1] < 19 || $tempDate[1] > 21 || !is_int($tempDate[0] || is_int($tempDate[1]))) {
+        if (count($tempDate) > 2 || $tempDate[0] > 12 || $tempDate[0] <= 0 ||
+            $tempDate[1] < 19 || $tempDate[1] > 21 || !is_int($tempDate[0]) || !is_int($tempDate[1])) {
+            var_dump($tempDate);
+
             throw  new \Exception('Card_expiration is not valid', 400);
 
         }
